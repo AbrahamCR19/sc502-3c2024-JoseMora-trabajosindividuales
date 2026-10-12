@@ -1,0 +1,324 @@
+
+/* ESTILOS GENERALES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f6fc;
+  color: #253b50;
+  line-height: 1.6;
+}
+
+/* BARRA DE NAVEGACION */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 8%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1675bd;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #365268;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #168bd4;
+}
+
+/* SECCION BIENVENIDA */
+
+.bienvenida {
+  text-align: center;
+  padding: 65px 20px;
+  background: linear-gradient(135deg, #d9ecfa, #eef7fd);
+}
+
+.bienvenida h1 {
+  font-size: 36px;
+  color: #17496d;
+  margin-bottom: 12px;
+}
+
+.bienvenida p {
+  font-size: 17px;
+  color: #526b7d;
+}
+
+/* PERFIL DEL DOCTOR */
+
+.perfil-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1150px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.doctor-imagen {
+  flex: 1;
+}
+
+.doctor-imagen img {
+  width: 100%;
+  max-width: 380px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.doctor-info {
+  flex: 1.5;
+}
+
+.etiqueta {
+  color: #168bd4;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.doctor-nombre {
+  font-size: 34px;
+  color: #17496d;
+  margin: 12px 0;
+}
+
+.doctor-especialidad {
+  color: #168bd4;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+#doctor-descripcion {
+  color: #516479;
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.9;
+}
+
+/* BOTONES */
+
+.btn-cita {
+  display: inline-block;
+  padding: 13px 28px;
+  background-color: #1675bd;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s,
+              transform 0.3s;
+}
+
+.btn-cita:hover {
+  background-color: #0b5086;
+  transform: translateY(-3px);
+}
+
+/* SERVICIOS */
+
+.servicios {
+  padding: 60px 8%;
+  background-color: #e8f3fc;
+  text-align: center;
+}
+
+.servicios h2,
+.comentarios h2 {
+  color: #17496d;
+  font-size: 29px;
+  margin-bottom: 25px;
+}
+
+.servicios-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.servicio {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  flex: 1 1 240px;
+  max-width: 350px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.servicio h3 {
+  color: #1675bd;
+  margin-bottom: 12px;
+}
+
+/* COMENTARIOS */
+
+.comentarios {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.comentarios-subtitulo {
+  color: #64748b;
+  margin-bottom: 35px;
+}
+
+.comentarios-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  flex: 1 1 250px;
+  max-width: 350px;
+  background-color: white;
+  border: 1px solid #d6e5f2;
+  border-radius: 14px;
+  padding: 30px;
+  margin: 10px 0;
+  text-align: left;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s,
+              box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.estrellas {
+  color: #e5a52c;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+  color: #17496d;
+  margin-bottom: 12px;
+}
+
+.tarjeta p {
+  color: #516479;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.fecha {
+  color: #718096;
+  font-size: 13px;
+}
+
+/* CONTACTO */
+
+.contacto {
+  background-color: #d9ecfa;
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.contacto h2 {
+  color: #17496d;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.contacto p {
+  margin-bottom: 25px;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+  background-color: #17496d;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 14px;
+}
+
+/* DISEÑO RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .perfil-container {
+    flex-direction: column;
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .doctor-imagen img {
+    height: auto;
+    max-width: 300px;
+  }
+
+  .doctor-nombre {
+    font-size: 27px;
+  }
+
+  .bienvenida h1 {
+    font-size: 27px;
+  }
+
+  .comentarios-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 100%;
+  }
+}
